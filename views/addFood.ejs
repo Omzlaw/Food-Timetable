@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Food Timetable</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"  >
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+
+    <section id="title">
+      <div class="title">
+        <h1>The Food Timetable<i> </i></i><i class="fas fa-table"></i></h1>
+        <p>Get a great combination of your meals</p>
+      </div>
+
+    </section>
+
+    <section id="middle1">
+      <h4>Add the meals you love below and get a nice random selection</h4>
+      <div class="row">
+        <div class="col-lg-3">
+          <img src="/almonds-berries-blackberries-1099680.jpg" alt="" class="img">
+        </div>
+        <div class="col-lg-3">
+          <img src="/blur-breakfast-close-up-376464.jpg" alt="" class="img">
+        </div>
+        <div class="col-lg-3">
+          <img src="/burrito-chicken-close-up-461198.jpg" alt="" class="img">
+        </div>
+        <div class="col-lg-3">
+          <img src="/close-up-cooking-dinner-46239.jpg" alt="" class="img">
+        </div>
+      </div>
+    </section>
+
+    <section id="addfood">
+      <h2>Please add at least 2 Solids, Fruits and Soups/Stews</h2>
+      <p>For Breakfast, Lunch and Dinner each</p>
+      <div class="row addfoodbox">
+        <div class="col-lg-4">
+          <i class="fas fa-utensils"></i>
+          <p>Add your solid foods</p>
+          <form action="/addFoodsolids" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control solids"  placeholder="Enter meal's name" name="solid">
+              <select class="" name="mealType">
+                <option value="Bf">Breakfast</option>
+                <option value="L">Lunch</option>
+                <option value="D">Dinner</option>
+              </select>
+              <p class="confirm"><%= solidtext %></p>
+            </div>
+          <button type="submit" class="btn btn-outline-primary">Add</button>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <i class="fas fa-apple-alt"></i>
+          <p>Add your fruits</p>
+          <form action="/addFoodfruits" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control fruits"  placeholder="Enter fruit's name" name="fruit">
+              <select class="" name="mealType">
+                <option value="Bf">Breakfast</option>
+                <option value="L">Lunch</option>
+                <option value="D">Dinner</option>
+              </select>
+              <p class="confirm"><%= fruittext %></p>
+            </div>
+          <button type="submit" class="btn btn-outline-primary">Add</button>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <i class="fas fa-utensil-spoon"></i>
+          <p>Add your soups</p>
+          <form action="/addFoodsoups" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control soups"  placeholder="Enter soup's name" name="soup">
+              <select class="" name="mealType">
+                <option value="Bf">Breakfast</option>
+                <option value="L">Lunch</option>
+                <option value="D">Dinner</option>
+              </select>
+              <p class="confirm"><%= souptext %></p>
+            </div>
+          <button type="submit" class="btn btn-outline-primary">Add</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="middle2">
+      <h1>Finally!!!!!</h1>
+      <form class="" action="/getTable" method="post">
+        <button  class="btn btn-outline-success" type="submit" name="button">Get combination table</button>
+      </form>
+      <div class="row">
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+        <div class="col-lg-3">
+
+        </div>
+      </div>
+    </section>
+
+    <section id="bottom">
+      <p>With Love From Refined Technology</p>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+res.render("tables", {
+  bm:  foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lm: foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  dm:  foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bt: foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lt: foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  dt:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item  + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bw: foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lw:foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  dw:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item  + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bth: foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lth:foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  dth:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item  + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bf: foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lf:foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  df:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item  + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bsa:foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  lsa:foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  dsa:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item  + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item,
+  bs: foundsolidb[Math.floor(Math.random()*foundsolidb.length)].item + " and " + foundsoupb[Math.floor(Math.random()*foundsoupb.length)].item,
+  ls:foundsolidl[Math.floor(Math.random()*foundsolidl.length)].item  + " and " + foundsoupl[Math.floor(Math.random()*foundsoupl.length)].item,
+  ds:foundsolidd[Math.floor(Math.random()*foundsolidd.length)].item + " and " + foundsoupd[Math.floor(Math.random()*foundsoupd.length)].item
+});
